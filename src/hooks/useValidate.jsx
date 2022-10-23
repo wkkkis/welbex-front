@@ -1,8 +1,5 @@
 import { useState } from "react"
 
-//Helpers
-import { checkIfFirstLetterInLowerCase } from "../helpers/string.helper";
-
 //Utils
 import { nameRegEx, numberRegEx } from "../utils/regex"
 
