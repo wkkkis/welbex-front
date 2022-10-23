@@ -1,5 +1,8 @@
 import { useState } from "react"
 
+//Helpers
+import { checkIfFirstLetterInLowerCase } from "../helpers/string.helper";
+
 //Utils
 import { nameRegEx, numberRegEx } from "../utils/regex"
 
@@ -38,8 +41,12 @@ export const useValidator = () => {
     return valid;
   }
 
-  //Проверка названия
+  //Проверка название я захотел чтобы название было с большой буквой
   const isNameValid = (name) => {
+    if (checkIfFirstLetterInLowerCase(name)) {
+      setErrorFor("name", false, "Название должно быть с большой буквы");
+      return;
+    }
 
     return isValid(name, nameRegEx, "name", "Поле название обязательна")
   }
