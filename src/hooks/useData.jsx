@@ -4,6 +4,7 @@ import { useState } from "react";
 import { instance } from "../helpers/api";
 import { useColumnConext } from "./ColumnContext";
 
+//Хук с функциями для запросов и записи
 const useData = () => {
     const { data, saveData } = useColumnConext()
     const [load, setLoad] = useState(false);

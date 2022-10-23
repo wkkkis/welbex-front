@@ -1,5 +1,3 @@
-export const DEFAULT_URL = "https://wlbex-backend.herokuapp.com/api";
-
 export const filtersArr = [
     {
         id: 1,

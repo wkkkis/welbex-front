@@ -7,6 +7,7 @@ const range = (start, end) => {
   return Array.from({ length }, (e, idx) => idx + start);
 };
 
+//Красивая пагинация с логикой
 export const usePagination = ({
   totalCount,
   pageSize,
