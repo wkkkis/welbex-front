@@ -38,12 +38,8 @@ export const useValidator = () => {
     return valid;
   }
 
-  //Проверка название я захотел чтобы название было с большой буквой
+  //Проверка названия
   const isNameValid = (name) => {
-    if (name && name[0] !== name[0].toUpperCase()) {
-      setErrorFor("name", false, "Название должно быть с большой буквы");
-      return;
-    }
 
     return isValid(name, nameRegEx, "name", "Поле название обязательна")
   }
