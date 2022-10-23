@@ -1,0 +1,24 @@
+.button {
+    padding: 1rem 3rem 1rem 3rem;
+    box-sizing: border-box;
+
+    width: auto;
+    height: 100%;
+
+    border: none;
+    background-color: #5668ca;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+
+    cursor: pointer;
+    color: #fff;
+
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #4053be;
+    }
+
+    &.disabled {
+        background-color: rgb(72, 72, 72);
+    }
+}

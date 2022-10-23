@@ -1,0 +1,17 @@
+.filters {
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &__btns {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__message {
+        color: red;
+    }
+}
